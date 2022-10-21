@@ -1,0 +1,67 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>school</title>
+        <script language="javascript">
+            function SelectRedirect(){
+                // ON selection of section this function will work
+                //alert( document.getElementById('s1').value);
+                
+                switch(document.getElementById('s1').value)
+                {
+                case "school":
+                window.location="./school.html";
+                break;
+                
+                case "home":
+                window.location="./room.html";
+                break;
+                
+                case "city":
+                window.location="./city.html";
+                break;
+                case "bus":
+                window.location="./bus.html";
+                break;
+                
+                case "hallway":
+                window.location="./hallway.html";
+                break;
+                
+                /// Can be extended to other different selections of SubCategory //////
+                default:
+                window.location="./journey.html"; // if no selection matches then redirected to home page
+                break;
+                }// end of switch 
+                }
+                ////////////////// 
+            </script>
+        <link rel ="stylesheet" href = "./style.css" />
+    </head>
+    <body>
+        
+        <video width = "100%" height = "100%" controls loop> 
+            <source src = "./school_final.mp4" type = "video/mp4">
+        </video>
+        <select id="s1" NAME="section" onChange="SelectRedirect();">
+            <option value="">Select Section</option>
+            <option value="school">Scene 1</option>
+            <option value="home">Scene 2</option>
+            <option value="city">Scene 3</option>
+            <option value="bus">Scene 4</option>
+            <option value="hallway">Scene 5</option>
+          </select>
+        <header>
+            <h1> School </h1>
+            <section>
+                <h2> Introduction </h2>
+                <h3> School scene</h3>
+                <p> I modeled this scene to look like our class, which represents for my school day.</p>
+                <p> Going to class, asking question, doing your projects are activities that we usually do in the class. Therefore, I also included those acitivities in this scene.</p>
+            </section>
+            
+        </header>
+    </body>
+</html>

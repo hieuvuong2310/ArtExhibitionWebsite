@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Journey</title>
+        <script language="javascript">
+            function SelectRedirect(){
+                // ON selection of section this function will work
+                //alert( document.getElementById('s1').value);
+                
+                switch(document.getElementById('s1').value)
+                {
+                case "school":
+                window.location="./school.html";
+                break;
+                
+                case "home":
+                window.location="./room.html";
+                break;
+                
+                case "city":
+                window.location="./city.html";
+                break;
+                case "bus":
+                window.location="./bus.html";
+                break;
+                
+                case "hallway":
+                window.location="./hallway.html";
+                break;
+                
+                /// Can be extended to other different selections of SubCategory //////
+                default:
+                window.location="./journey.html"; // if no selection matches then redirected to home page
+                break;
+                }// end of switch 
+                }
+                ////////////////// 
+            </script>
+        <link rel ="stylesheet" href = "./style.css" />
+    </head>
+    <body>
+        
+        <!-- <video width = "100%" height = "100%" controls> 
+            <source src = "https://studentweb.uvic.ca/~vthieu/bus_5.mp4" type = "video/mp4">
+        </video> -->
+        <select id="s1" NAME="section" onChange="SelectRedirect();">
+            <option value="">Select Section</option>
+            <option value="school">Scene 1</option>
+            <option value="home">Scene 2</option>
+            <option value="city">Scene 3</option>
+            <option value="bus">Scene 4</option>
+            <option value="hallway">Scene 5</option>
+          </select>
+        <header>
+            <h1> Journey </h1>
+            <section>
+                <h2> Introduction </h2>
+            <h3> Welcome to my webpage.</h3>
+                <p> This website is for users/viewers to interact with website to decide which scene they want to visit and create your own story/feeling based on the available scenes.</p>
+            </section>
+            <section>
+                <h3> How to use </h3>
+                <p> As a user you can have a choice to choose which scene you want to go next by clicking to the drop-down list and choose the scene you want</p>
+                <p> However, I decided to keep the scene anonymous. You will not know what the next scene you choose is about until you choose to visit it. </p>
+            </section>
+            <section>
+                <h3> Character </h3>
+                <p> This brown bear will be the main character in all scenes. I chose it because I wanted to keep the consistence of all my videos.</p>
+                <p> Why brown bear? Because it is related to my childhood, and till now. I am attracted to this cute character. I also want to reflect myself, my interest in my artwork. But this time, I will not make a fixed artwork, I make an interactive art, where viewers can decide what my artwork will be.</p>
+            </section>
+            
+        </header>
+        <video width = "100%" height = "100%" controls autoplay loop muted> 
+            <source src = "./bear.mp4" type = "video/mp4">
+        </video>
+    </body>
+</html>
